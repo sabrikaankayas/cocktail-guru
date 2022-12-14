@@ -10,7 +10,7 @@ const NavBar = () => {
 
     const handleOnClick = useCallback(() => navigate(`/`, {replace: false}), [navigate]);
     const handleOnClick2 = useCallback(() => {
-        navigate(toggle ? `/random1` : `/random2` , {replace: true}) 
+        navigate(toggle ? `/random1` : `/random2` , {replace: false}) 
         setToggle(!toggle)}, [navigate]) 
     return (
     <div className="nav">
