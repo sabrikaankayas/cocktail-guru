@@ -1,0 +1,101 @@
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    color: white;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(29,13,13,1) 0%, rgba(2,0,36,1) 35%, rgba(29,13,13,0.5) 100%);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.card:hover {
+    scale: 1.08;
+}
+.card h2 {
+    width: 90%;
+    background-color: rgba(29, 13, 13, 0.5);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.card img {
+    width: 90%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.search-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+.search-container input {
+    padding: 0.5rem 3rem;
+    font-size: 1.3rem;
+}
+.search-container input:focus {
+    outline: none;
+}
+/* MEDIA QUARIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .card {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem 0;
+        color: white;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(29,13,13,1) 0%, rgba(2,0,36,1) 35%, rgba(29,13,13,0.5) 100%);
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    .card:hover {
+        scale: 1.08;
+    }
+    .card h2 {
+        width: 90%;
+        background-color: rgba(29, 13, 13, 0.5);
+        text-align: center;
+        margin-bottom: 0.2rem;
+        font-size: 1.3rem;
+    }
+    .card img {
+        width: 80%;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+    }
+    .search-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .search-container input {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.2rem;
+        border: none;
+        text-align: center;
+    }
+    .search-container input:focus {
+        outline: none;
+    }
+}
