@@ -94,6 +94,7 @@
         font-size: 1.2rem;
         border: none;
         text-align: center;
+        width: 90%
     }
     .search-container input:focus {
         outline: none;
